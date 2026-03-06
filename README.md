@@ -37,12 +37,6 @@ dart pub get
 cd ..
 ```
 
-Then fetch packages:
-
-```bash
-dart pub get
-```
-
 ## Import
 
 ```dart
