@@ -30,12 +30,38 @@ time. This means:
 
 in the same directory of the extension you are working on.
 
+> File structure before
+```bash
+your-extension-project/
+|- extension.dart # YOUR EXTENSION
+```
+
+#
+Installation:
 ```sh
 git clone https://github.com/5y3b/mangayomi-extension-developer-dart.git lib
 cd lib
 dart pub get
+cp pubspec.yaml ..
 cd ..
 
+```
+
+> File Structure after
+
+```bash
+your-extension-project/
+|- extension.dart # YOUR EXTENSION
+|- pubspec.yaml
+|- lib/
+|  |- bridge_lib.dart
+|  |- pubspec.yaml
+|  |- README.md
+|  |- bridge_classes/
+|  |  |- document.dart
+|  |  |- *.dart
+|  |  |- dart/
+|  |  |  |- *.dart
 ```
 
 ## Import
