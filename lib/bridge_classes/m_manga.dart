@@ -1,5 +1,5 @@
-import './m_chapter.dart';
-import './dart/status.dart';
+import 'm_chapter.dart';
+import 'dart/status.dart';
 
 class MManga {
   MManga({

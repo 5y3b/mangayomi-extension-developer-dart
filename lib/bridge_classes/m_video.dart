@@ -1,4 +1,5 @@
 import 'dart/video.dart';
+export 'dart/video.dart' show Video;
 
 class MVideo {
   MVideo(

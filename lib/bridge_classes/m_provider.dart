@@ -1,9 +1,9 @@
-import './dart/video.dart';
-import './filter.dart';
-import './m_manga.dart';
-import './m_pages.dart';
-import './dart/status.dart';
-import './document.dart';
+import 'dart/video.dart';
+import 'filter.dart';
+import 'm_manga.dart';
+import 'm_pages.dart';
+import 'dart/status.dart';
+import 'document.dart';
 import 'dart/js_eval_result.dart';
 
 class MProvider {

@@ -1,5 +1,5 @@
 import 'package:html/dom.dart';
-import './element.dart';
+import 'element.dart';
 
 class MDocument {
   MDocument(Document document);

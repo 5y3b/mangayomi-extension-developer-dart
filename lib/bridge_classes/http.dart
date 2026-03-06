@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'dart:typed_data';
 
 class Client {
-  Client(dynamic source, String? reqcopyWith);
+  Client([dynamic source, String? reqcopyWith]);
 
   Future<Response> get(Uri url, {Map<String, String>? headers}) =>
       throw UnimplementedError();

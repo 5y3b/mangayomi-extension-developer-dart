@@ -10,9 +10,9 @@ class SelectFilter {
     String? type,
     String name,
     int state,
-    List<SelectFilterOption> values,
+    List<SelectFilterOption> values, [
     String? typeName,
-  );
+  ]);
 
   String? get type => throw UnimplementedError();
   set type(String? value) => throw UnimplementedError();
@@ -31,7 +31,7 @@ class SelectFilter {
 }
 
 class SelectFilterOption {
-  SelectFilterOption(String name, String value, String? typeName);
+  SelectFilterOption(String name, String value, [String? typeName]);
 
   String get name => throw UnimplementedError();
   set name(String value) => throw UnimplementedError();
@@ -44,7 +44,7 @@ class SelectFilterOption {
 }
 
 class SeparatorFilter {
-  SeparatorFilter(String? type);
+  SeparatorFilter([String? type]);
 
   String? get type => throw UnimplementedError();
   set type(String? value) => throw UnimplementedError();
@@ -67,7 +67,7 @@ class HeaderFilter {
 }
 
 class TextFilter {
-  TextFilter(String? type, String name, String? typeName, {String state = ''});
+  TextFilter(String? type, String name, {String? typeName, String state = ''});
 
   String? get type => throw UnimplementedError();
   set type(String? value) => throw UnimplementedError();
@@ -122,10 +122,10 @@ class SortState {
 class TriStateFilter {
   TriStateFilter(
     String name,
-    String value,
+    String value, [
     String? type,
     dynamic typeNameORstate,
-  );
+  ]);
 
   String? get type => throw UnimplementedError();
   set type(String? value) => throw UnimplementedError();
@@ -143,7 +143,7 @@ class TriStateFilter {
 }
 
 class GroupFilter {
-  GroupFilter(String? type, String name, List state, String? typeName);
+  GroupFilter(String? type, String name, List state, [String? typeName]);
 
   String? get type => throw UnimplementedError();
   set type(String? value) => throw UnimplementedError();
@@ -159,7 +159,7 @@ class GroupFilter {
 }
 
 class CheckBoxFilter {
-  CheckBoxFilter(String name, String value, String? type, bool? state);
+  CheckBoxFilter(String name, String value, [String? type, bool? state]);
 
   String? get type => throw UnimplementedError();
   set type(String? value) => throw UnimplementedError();
