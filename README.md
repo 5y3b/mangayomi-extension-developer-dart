@@ -31,7 +31,7 @@ time. This means:
 in the same directory of the extension you are working on.
 
 ```sh
-git clone <meow> lib
+git clone https://github.com/5y3b/mangayomi-extension-developer-dart.git lib
 cd lib
 dart pub get
 cd ..
