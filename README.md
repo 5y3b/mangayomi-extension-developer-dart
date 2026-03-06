@@ -35,6 +35,7 @@ git clone https://github.com/5y3b/mangayomi-extension-developer-dart.git lib
 cd lib
 dart pub get
 cd ..
+
 ```
 
 ## Import
