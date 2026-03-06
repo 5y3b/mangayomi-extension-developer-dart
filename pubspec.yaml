@@ -1,0 +1,10 @@
+name: mangayomi
+description: A developer help tools for developing extensions for mangayomi.
+version: 0.0.1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  html: ^0.15.6
+  http: ^1.6.0
