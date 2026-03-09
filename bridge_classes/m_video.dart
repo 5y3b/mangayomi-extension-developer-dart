@@ -1,7 +1,7 @@
 import 'dart/video.dart';
 export 'dart/video.dart' show Video;
 
-class MVideo {
+class MVideo implements Video {
   MVideo(
     String url,
     String quality,
