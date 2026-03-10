@@ -1,4 +1,6 @@
-class MTrack {
+import 'dart/video.dart';
+
+class MTrack extends Track {
   MTrack({String? file, String? label});
 
   String? get file => throw UnimplementedError();
