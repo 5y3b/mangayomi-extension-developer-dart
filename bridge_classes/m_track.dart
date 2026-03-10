@@ -1,5 +1,7 @@
 import 'dart/video.dart';
 
+export 'dart/video.dart' show Track;
+
 class MTrack extends Track {
   MTrack({String? file, String? label});
 
