@@ -87,9 +87,9 @@ class SortFilter {
     String? type,
     String name,
     SortState state,
-    List values,
+    List values, [
     String? typeName,
-  );
+  ]);
 
   String? get type => throw UnimplementedError();
   set type(String? value) => throw UnimplementedError();
