@@ -2,6 +2,11 @@ import 'dart/video.dart';
 export 'dart/video.dart' show Video;
 
 class MVideo implements Video {
+  /// If error is shown because of mising first 3 parameters, do not worry\
+  /// at runtime, if they are not provided, they will be empty strings\
+  /// but there is no way in plain dart to have optional parameters before required ones\
+  /// just add empty strings for the first 3 parameters and it will work fine \
+  /// same as if not adding
   MVideo(
     String url,
     String quality,
