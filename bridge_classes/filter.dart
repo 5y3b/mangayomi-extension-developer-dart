@@ -107,7 +107,7 @@ class SortFilter {
 }
 
 class SortState {
-  SortState(int index, bool ascending, String? typeName);
+  SortState(int index, bool ascending, [String? typeName]);
 
   int get index => throw UnimplementedError();
   set index(int value) => throw UnimplementedError();
