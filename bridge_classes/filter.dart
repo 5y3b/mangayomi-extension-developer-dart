@@ -54,7 +54,7 @@ class SeparatorFilter {
 }
 
 class HeaderFilter {
-  HeaderFilter(String name, String? type);
+  HeaderFilter(String name, [String? type]);
 
   String? get type => throw UnimplementedError();
   set type(String? value) => throw UnimplementedError();
