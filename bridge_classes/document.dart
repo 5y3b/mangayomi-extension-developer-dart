@@ -9,28 +9,20 @@ class MDocument {
   MElement? get documentElement => throw UnimplementedError();
   MElement? get head => throw UnimplementedError();
   MElement? get parent => throw UnimplementedError();
-  String get outerHtml => throw UnimplementedError();
-  String get text => throw UnimplementedError();
-  List<MElement> get children => throw UnimplementedError();
+  String? get outerHtml => throw UnimplementedError();
+  String? get text => throw UnimplementedError();
+  List<MElement>? get children => throw UnimplementedError();
 
   // Methods
-  List<MElement> select(String selector) => throw UnimplementedError();
-
-  MElement? selectFirst(String selector) => throw UnimplementedError();
-
-  List<MElement> getElementsByClassName(String className) =>
+  List<MElement>? select(String selector) => throw UnimplementedError();
+  MElement? xpathFirst(String xpath) => throw UnimplementedError();
+  List<MElement> xpath(String xpath) => throw UnimplementedError();
+  List<MElement>? getElementsByClassName(String classNames) =>
       throw UnimplementedError();
-
-  List<MElement> getElementsByTagName(String tagName) =>
+  List<MElement>? getElementsByTagName(String localNames) =>
       throw UnimplementedError();
-
   MElement? getElementById(String id) => throw UnimplementedError();
-
-  String attr(String name) => throw UnimplementedError();
-
-  bool hasAttr(String name) => throw UnimplementedError();
-
-  List<MElement> xpath(String query) => throw UnimplementedError();
-
-  MElement? xpathFirst(String query) => throw UnimplementedError();
+  MElement? selectFirst(String selector) => throw UnimplementedError();
+  String? attr(String attr) => throw UnimplementedError();
+  bool hasAttr(String attr) => throw UnimplementedError();
 }
