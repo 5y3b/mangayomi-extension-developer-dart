@@ -15,8 +15,8 @@ class MDocument {
 
   // Methods
   List<MElement>? select(String selector) => throw UnimplementedError();
-  MElement? xpathFirst(String xpath) => throw UnimplementedError();
-  List<MElement> xpath(String xpath) => throw UnimplementedError();
+  String? xpathFirst(String xpath) => throw UnimplementedError();
+  List<String> xpath(String xpath) => throw UnimplementedError();
   List<MElement>? getElementsByClassName(String classNames) =>
       throw UnimplementedError();
   List<MElement>? getElementsByTagName(String localNames) =>
