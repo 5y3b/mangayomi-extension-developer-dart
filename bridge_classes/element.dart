@@ -28,7 +28,6 @@ class MElement {
       throw UnimplementedError();
   List<MElement>? getElementsByTagName(String localNames) =>
       throw UnimplementedError();
-  MElement? getElementById(String id) => throw UnimplementedError();
   MElement? selectFirst(String selector) => throw UnimplementedError();
   String? attr(String attr) => throw UnimplementedError();
   bool hasAttr(String attr) => throw UnimplementedError();
