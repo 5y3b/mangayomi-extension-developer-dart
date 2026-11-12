@@ -1,39 +1,50 @@
-import 'package:http/http.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'dart:typed_data';
 
+import 'package:http/http.dart' as http;
+
+import 'm_source.dart';
+
+/// The HTTP client exposed to extensions.
+///
+/// The runtime builds it from an [MSource] so that cookies, headers and
+/// Cloudflare handling follow the configuration of the source the extension
+/// belongs to.
+///
+/// [reqcopyWith] is a JSON encoded map of request overrides, for example
+/// `{"timeout": 30, "followRedirects": false}`.
 class Client {
-  Client([dynamic source, String? reqcopyWith]);
+  Client([MSource? source, String? reqcopyWith]);
 
-  Future<Response> get(Uri url, {Map<String, String>? headers}) =>
+  Future<http.Response> get(Uri url, {Map<String, String>? headers}) =>
       throw UnimplementedError();
 
-  Future<Response> post(
+  Future<http.Response> post(
     Uri url, {
     Map<String, String>? headers,
     Object? body,
     Encoding? encoding,
   }) => throw UnimplementedError();
 
-  Future<Response> put(
+  Future<http.Response> put(
     Uri url, {
     Map<String, String>? headers,
     Object? body,
     Encoding? encoding,
   }) => throw UnimplementedError();
 
-  Future<Response> delete(
+  Future<http.Response> delete(
     Uri url, {
     Map<String, String>? headers,
     Object? body,
     Encoding? encoding,
   }) => throw UnimplementedError();
 
-  Future<Response> head(Uri url, {Map<String, String>? headers}) =>
+  Future<http.Response> head(Uri url, {Map<String, String>? headers}) =>
       throw UnimplementedError();
 
-  Future<Response> patch(
+  Future<http.Response> patch(
     Uri url, {
     Map<String, String>? headers,
     Object? body,
@@ -48,6 +59,6 @@ class Client {
 
   void close() => throw UnimplementedError();
 
-  Future<StreamedResponse> send(BaseRequest request) =>
+  Future<http.StreamedResponse> send(http.BaseRequest request) =>
       throw UnimplementedError();
 }
