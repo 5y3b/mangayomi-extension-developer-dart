@@ -133,7 +133,7 @@ class TriStateFilter {
     String name,
     String value, [
     String? type,
-    dynamic typeNameORstate,
+    String? typeName,
   ]);
 
   String? get type => throw UnimplementedError();
