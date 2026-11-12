@@ -96,7 +96,7 @@ class SortFilter {
     String? type,
     String name,
     SortState state,
-    List values, [
+    List<dynamic> values, [
     String? typeName,
   ]);
 
@@ -108,8 +108,8 @@ class SortFilter {
 
   SortState get state => throw UnimplementedError();
 
-  List get values => throw UnimplementedError();
-  set values(List value) => throw UnimplementedError();
+  List<dynamic> get values => throw UnimplementedError();
+  set values(List<dynamic> value) => throw UnimplementedError();
 
   String? get typeName => throw UnimplementedError();
   set typeName(String? value) => throw UnimplementedError();
