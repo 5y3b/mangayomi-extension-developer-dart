@@ -109,7 +109,7 @@ String getMapValue(String source, String attr, {bool encode = false}) =>
 
 Status parseStatus(String status, List statusList) =>
     throw UnimplementedError();
-List parseDates(List value, String dateFormat, String dateFormatLocale) =>
+List<String> parseDates(List value, String dateFormat, String dateFormatLocale) =>
     throw UnimplementedError();
 
 List<String>? xpath(String html, String xpath) => throw UnimplementedError();
