@@ -6,8 +6,6 @@ import 'm_status.dart';
 import 'document.dart';
 import 'dart/js_eval_result.dart';
 
-export 'dart/js_eval_result.dart';
-
 class MProvider {
   bool get supportsLatest => throw UnimplementedError();
   String? get baseUrl => throw UnimplementedError();
