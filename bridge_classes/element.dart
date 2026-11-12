@@ -23,7 +23,7 @@ class MElement {
   // Methods
   List<MElement>? select(String selector) => throw UnimplementedError();
   String? xpathFirst(String xpath) => throw UnimplementedError();
-  List<String> xpath(String xpath) => throw UnimplementedError();
+  List<String>? xpath(String xpath) => throw UnimplementedError();
   List<MElement>? getElementsByClassName(String classNames) =>
       throw UnimplementedError();
   List<MElement>? getElementsByTagName(String localNames) =>
