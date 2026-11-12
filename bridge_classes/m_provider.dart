@@ -154,6 +154,6 @@ String getUrlWithoutDomain(String url) => throw UnimplementedError();
 Future<String> evaluateJavascriptViaWebview(
   String url,
   Map<String, String> headers,
-  List<String> scripts, {
+  List scripts, {
   int time = 30,
 }) => throw UnimplementedError();
