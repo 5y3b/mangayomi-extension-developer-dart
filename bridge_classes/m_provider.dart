@@ -45,6 +45,18 @@ String encryptAESCryptoJS(String plainText, String passphrase) =>
 String decryptAESCryptoJS(String encrypted, String passphrase) =>
     throw UnimplementedError();
 
+/// AES-GCM decryption.
+///
+/// [encrypted] is the base64 ciphertext. When the 16 byte GCM auth tag is
+/// already appended to it, pass an empty [tagHex]. [keyHex] and [ivHex] are
+/// hex encoded.
+String decryptAESGCM(
+  String encrypted,
+  String keyHex,
+  String ivHex,
+  String tagHex,
+) => throw UnimplementedError();
+
 String deobfuscateJsPassword(String inputString) => throw UnimplementedError();
 
 Future<List<Video>> sibnetExtractor(String url, String prefix) =>
