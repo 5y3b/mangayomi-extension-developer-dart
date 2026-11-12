@@ -152,7 +152,9 @@ class TriStateFilter {
 }
 
 class GroupFilter {
-  GroupFilter(String? type, String name, List state, [String? typeName]);
+  GroupFilter(String? type, String name, List<dynamic> state, [
+    String? typeName,
+  ]);
 
   String? get type => throw UnimplementedError();
   set type(String? value) => throw UnimplementedError();
@@ -160,8 +162,8 @@ class GroupFilter {
   String get name => throw UnimplementedError();
   set name(String value) => throw UnimplementedError();
 
-  List get state => throw UnimplementedError();
-  set state(List value) => throw UnimplementedError();
+  List<dynamic> get state => throw UnimplementedError();
+  set state(List<dynamic> value) => throw UnimplementedError();
 
   String? get typeName => throw UnimplementedError();
   set typeName(String? value) => throw UnimplementedError();
