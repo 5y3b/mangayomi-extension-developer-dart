@@ -4,7 +4,7 @@ class MChapter {
     String? url,
     String? dateUpload,
     String? scanlator,
-    bool? isFiller = false,
+    bool? isFiller,
     String? thumbnailUrl,
     String? description,
     String? downloadSize,
