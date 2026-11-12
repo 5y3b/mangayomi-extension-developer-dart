@@ -67,7 +67,16 @@ class HeaderFilter {
 }
 
 class TextFilter {
-  TextFilter(String? type, String name, {String? typeName, String state = ''});
+  /// [typeName] is the third positional argument and [state] is a named
+  /// argument. Dart does not allow an optional positional group and a named
+  /// group in the same parameter list, so [typeName] has to be passed
+  /// explicitly (as `null` when it is not needed).
+  TextFilter(
+    String? type,
+    String name,
+    String? typeName, {
+    String state = '',
+  });
 
   String? get type => throw UnimplementedError();
   set type(String? value) => throw UnimplementedError();
