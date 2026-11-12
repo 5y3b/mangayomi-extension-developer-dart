@@ -1,8 +1,8 @@
 class FilterList {
   FilterList(List filters);
 
-  List get filters => throw UnimplementedError();
-  set filters(List value) => throw UnimplementedError();
+  List<dynamic> get filters => throw UnimplementedError();
+  set filters(List<dynamic> value) => throw UnimplementedError();
 }
 
 class SelectFilter {
@@ -67,7 +67,16 @@ class HeaderFilter {
 }
 
 class TextFilter {
-  TextFilter(String? type, String name, {String? typeName, String state = ''});
+  /// [typeName] is the third positional argument and [state] is a named
+  /// argument. Dart does not allow an optional positional group and a named
+  /// group in the same parameter list, so [typeName] has to be passed
+  /// explicitly (as `null` when it is not needed).
+  TextFilter(
+    String? type,
+    String name,
+    String? typeName, {
+    String state = '',
+  });
 
   String? get type => throw UnimplementedError();
   set type(String? value) => throw UnimplementedError();
@@ -87,7 +96,7 @@ class SortFilter {
     String? type,
     String name,
     SortState state,
-    List values, [
+    List<dynamic> values, [
     String? typeName,
   ]);
 
@@ -99,8 +108,8 @@ class SortFilter {
 
   SortState get state => throw UnimplementedError();
 
-  List get values => throw UnimplementedError();
-  set values(List value) => throw UnimplementedError();
+  List<dynamic> get values => throw UnimplementedError();
+  set values(List<dynamic> value) => throw UnimplementedError();
 
   String? get typeName => throw UnimplementedError();
   set typeName(String? value) => throw UnimplementedError();
@@ -124,7 +133,7 @@ class TriStateFilter {
     String name,
     String value, [
     String? type,
-    dynamic typeNameORstate,
+    String? typeName,
   ]);
 
   String? get type => throw UnimplementedError();
@@ -143,7 +152,9 @@ class TriStateFilter {
 }
 
 class GroupFilter {
-  GroupFilter(String? type, String name, List state, [String? typeName]);
+  GroupFilter(String? type, String name, List<dynamic> state, [
+    String? typeName,
+  ]);
 
   String? get type => throw UnimplementedError();
   set type(String? value) => throw UnimplementedError();
@@ -151,8 +162,8 @@ class GroupFilter {
   String get name => throw UnimplementedError();
   set name(String value) => throw UnimplementedError();
 
-  List get state => throw UnimplementedError();
-  set state(List value) => throw UnimplementedError();
+  List<dynamic> get state => throw UnimplementedError();
+  set state(List<dynamic> value) => throw UnimplementedError();
 
   String? get typeName => throw UnimplementedError();
   set typeName(String? value) => throw UnimplementedError();

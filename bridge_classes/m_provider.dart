@@ -2,7 +2,7 @@ import 'dart/video.dart';
 import 'filter.dart';
 import 'm_manga.dart';
 import 'm_pages.dart';
-import 'dart/status.dart';
+import 'm_status.dart';
 import 'document.dart';
 import 'dart/js_eval_result.dart';
 
@@ -42,6 +42,18 @@ String encryptAESCryptoJS(String plainText, String passphrase) =>
     throw UnimplementedError();
 String decryptAESCryptoJS(String encrypted, String passphrase) =>
     throw UnimplementedError();
+
+/// AES-GCM decryption.
+///
+/// [encrypted] is the base64 ciphertext. When the 16 byte GCM auth tag is
+/// already appended to it, pass an empty [tagHex]. [keyHex] and [ivHex] are
+/// hex encoded.
+String decryptAESGCM(
+  String encrypted,
+  String keyHex,
+  String ivHex,
+  String tagHex,
+) => throw UnimplementedError();
 
 String deobfuscateJsPassword(String inputString) => throw UnimplementedError();
 
@@ -93,9 +105,8 @@ String substringAfterLast(String text, String pattern) =>
 String getMapValue(String source, String attr, {bool encode = false}) =>
     throw UnimplementedError();
 
-Status parseStatus(String status, List statusList) =>
-    throw UnimplementedError();
-List parseDates(List value, String dateFormat, String dateFormatLocale) =>
+MStatus parseStatus(String status, List statusList) => throw UnimplementedError();
+List<String> parseDates(List value, String dateFormat, String dateFormatLocale) =>
     throw UnimplementedError();
 
 List<String>? xpath(String html, String xpath) => throw UnimplementedError();
@@ -113,8 +124,11 @@ Future<List<Video>> mp4UploadExtractor(
 ) => throw UnimplementedError();
 Future<List<Video>> streamWishExtractor(String url, String prefix) =>
     throw UnimplementedError();
-filemoonExtractor(String url, String prefix, String suffix) =>
-    throw UnimplementedError();
+Future<List<Video>> filemoonExtractor(
+  String url,
+  String prefix,
+  String suffix,
+) => throw UnimplementedError();
 
 String? unpackJs(String code) => throw UnimplementedError();
 String? unpackJsAndCombine(String code) => throw UnimplementedError();
@@ -138,6 +152,6 @@ String getUrlWithoutDomain(String url) => throw UnimplementedError();
 Future<String> evaluateJavascriptViaWebview(
   String url,
   Map<String, String> headers,
-  List<String> scripts, {
+  List scripts, {
   int time = 30,
 }) => throw UnimplementedError();

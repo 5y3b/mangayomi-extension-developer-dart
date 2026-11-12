@@ -1,5 +1,5 @@
 import 'm_chapter.dart';
-import 'dart/status.dart';
+import 'm_status.dart';
 
 class MManga {
   MManga({
@@ -9,7 +9,7 @@ class MManga {
     String? imageUrl,
     String? link,
     String? name,
-    Status? status = Status.unknown,
+    MStatus? status = MStatus.unknown,
     String? description,
     List<MChapter>? chapters,
   });
@@ -32,8 +32,8 @@ class MManga {
   String? get name => throw UnimplementedError();
   set name(String? value) => throw UnimplementedError();
 
-  Status? get status => throw UnimplementedError();
-  set status(Status? value) => throw UnimplementedError();
+  MStatus? get status => throw UnimplementedError();
+  set status(MStatus? value) => throw UnimplementedError();
 
   String? get description => throw UnimplementedError();
   set description(String? value) => throw UnimplementedError();
