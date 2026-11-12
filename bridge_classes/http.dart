@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 import 'm_source.dart';
 
 export 'package:http/http.dart'
-    show BaseRequest, Request, Response, StreamedResponse;
+    show BaseRequest, ByteStream, Request, Response, StreamedResponse;
 
 /// The HTTP client exposed to extensions.
 ///
