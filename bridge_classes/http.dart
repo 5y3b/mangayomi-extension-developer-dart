@@ -6,6 +6,8 @@ import 'package:http/http.dart' as http;
 
 import 'm_source.dart';
 
+export 'package:http/http.dart' show Response;
+
 /// The HTTP client exposed to extensions.
 ///
 /// The runtime builds it from an [MSource] so that cookies, headers and
