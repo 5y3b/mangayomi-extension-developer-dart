@@ -1,8 +1,8 @@
 class FilterList {
   FilterList(List filters);
 
-  List get filters => throw UnimplementedError();
-  set filters(List value) => throw UnimplementedError();
+  List<dynamic> get filters => throw UnimplementedError();
+  set filters(List<dynamic> value) => throw UnimplementedError();
 }
 
 class SelectFilter {
