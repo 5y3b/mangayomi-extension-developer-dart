@@ -127,8 +127,11 @@ Future<List<Video>> mp4UploadExtractor(
 ) => throw UnimplementedError();
 Future<List<Video>> streamWishExtractor(String url, String prefix) =>
     throw UnimplementedError();
-filemoonExtractor(String url, String prefix, String suffix) =>
-    throw UnimplementedError();
+Future<List<Video>> filemoonExtractor(
+  String url,
+  String prefix,
+  String suffix,
+) => throw UnimplementedError();
 
 String? unpackJs(String code) => throw UnimplementedError();
 String? unpackJsAndCombine(String code) => throw UnimplementedError();
