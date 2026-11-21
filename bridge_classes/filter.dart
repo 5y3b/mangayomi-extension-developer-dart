@@ -69,12 +69,11 @@ class HeaderFilter {
 class TextFilter {
   /// [typeName] is the third positional argument and [state] is a named
   /// argument. Dart does not allow an optional positional group and a named
-  /// group in the same parameter list, so [typeName] has to be passed
-  /// explicitly (as `null` when it is not needed).
+  /// group in the same parameter list, ignored for now.
   TextFilter(
     String? type,
-    String name,
-    String? typeName, {
+    String name, {
+    // String? typeName, // READ ABOVE
     String state = '',
   });
 
@@ -129,12 +128,7 @@ class SortState {
 }
 
 class TriStateFilter {
-  TriStateFilter(
-    String name,
-    String value, [
-    String? type,
-    String? typeName,
-  ]);
+  TriStateFilter(String name, String value, [String? type, String? typeName]);
 
   String? get type => throw UnimplementedError();
   set type(String? value) => throw UnimplementedError();
@@ -152,7 +146,10 @@ class TriStateFilter {
 }
 
 class GroupFilter {
-  GroupFilter(String? type, String name, List<dynamic> state, [
+  GroupFilter(
+    String? type,
+    String name,
+    List<dynamic> state, [
     String? typeName,
   ]);
 
